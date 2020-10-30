@@ -46,10 +46,10 @@ button {
 .container-modal {
   width: 100%;
   height: 100vh;
-  border: 2px black solid;
   display: flex;
   justify-content: center;
   align-items: center;
+
   /* position: fixed; */
 }
 
@@ -78,4 +78,14 @@ button {
 textarea {
   resize: none;
   width: 100%;
+}
+
+#input {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 1.75rem;
+}
+
+select {
+  margin-right: 1rem;
 }
