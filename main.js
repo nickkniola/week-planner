@@ -8,11 +8,19 @@ addEntry.addEventListener('click', function () {
 });
 
 var entryList = {
-  data-view: '',
-  entry: []
-}
+  currentView: '',
+  monday: {
+    entry: []
+  }
+};
 
-var entryData = {
-  day: ,
-  time:
-}
+var form = document.querySelector('form');
+
+var entryData = {};
+entryData.day = form.elements.day.value;
+entryData.hour = form.elements.hour.value;
+entryData.description = form.elements.description.value;
+
+// push object into array
+
+console.log(entryList);
