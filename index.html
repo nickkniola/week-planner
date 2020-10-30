@@ -23,7 +23,7 @@
     <div class="row">
       <button>Add Entry</button>
     </div>
-    <div class="container overlay invisible">
+    <div class="modal-container overlay invisible">
       <div class="modal invisible">
         <div class="row">
           <h2>Add Entry</h2>
@@ -40,11 +40,31 @@
               <option value="friday">Friday</option>
               <option value="saturday">Saturday</option>
             </select>
+            <select id="hour" name="hour">
+              <option value="5-am">5:00 AM</option>
+              <option value="6-am">6:00 AM</option>
+              <option value="7-am">7:00 AM</option>
+              <option value="8-am">8:00 AM</option>
+              <option value="9-am">9:00 AM</option>
+              <option value="10-am">10:00 AM</option>
+              <option value="11-am">11:00 AM</option>
+              <option value="12-am">12:00 PM</option>
+              <option value="1-pm">1:00 PM</option>
+              <option value="2-pm">2:00 PM</option>
+              <option value="3-pm">3:00 PM</option>
+              <option value="4-pm">4:00 PM</option>
+              <option value="5-pm">5:00 PM</option> 
+            </select>
           </div>
           <div class="row">
-            <select id="hour" name="hour">
-              <option></option>
-            </select>
+            <div class="modal-text-container">
+              <textarea name="description" id="description" placeholder="Description" rows="10"></textarea>
+            </div> 
+          </div>
+          <div class="row">
+            <div class="modal-submit-container">
+              <button type="submit">Submit</button>
+            </div>
           </div>
         </form>
       </div>
