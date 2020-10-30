@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Weekly Planner</h1>
-  </header>
+  <div class="overlay">
   <div class="container">
+    <header>
+      <h1>Weekly Planner</h1>
+    </header>
     <div class="row linkbuttons hidden">
         <a class="button" href="#" data-view="sunday">Sunday</a>
         <a class="button" href="#" data-view="monday">Monday</a>
@@ -24,7 +25,7 @@
       <button>Add Entry</button>
     </div>
   </div>
-  <div class="modal-container overlay">
+  <div class="modal-container">
       <div class="modal">
         <div class="row">
           <h2>Add Entry</h2>
@@ -69,6 +70,7 @@
           </div>
         </form>
       </div>
+  </div>
   </div>
   <script src="main.js"></script>
 </body>
