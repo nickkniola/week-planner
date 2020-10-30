@@ -6,3 +6,13 @@ addEntry.addEventListener('click', function () {
   overElement.className = 'overlay';
   modalElement.className = 'modal';
 });
+
+var entryList = {
+  data-view: '',
+  entry: []
+}
+
+var entryData = {
+  day: ,
+  time:
+}
