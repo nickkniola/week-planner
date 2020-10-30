@@ -23,6 +23,32 @@
     <div class="row">
       <button>Add Entry</button>
     </div>
+    <div class="container overlay invisible">
+      <div class="modal invisible">
+        <div class="row">
+          <h2>Add Entry</h2>
+        </div>
+        <form>
+          <div class="row">
+            <select>
+              <option value="" disabled>Day of Week</option>
+              <option value="sunday">Sunday</option>
+              <option value="monday">Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="thursday">Thursday</option>
+              <option value="friday">Friday</option>
+              <option value="saturday">Saturday</option>
+            </select>
+          </div>
+          <div class="row">
+            <select id="hour" name="hour">
+              <option></option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
   <script src="main.js"></script>
 </body>
