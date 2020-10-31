@@ -7,20 +7,34 @@ addEntry.addEventListener('click', function () {
   modalElement.className = 'modal';
 });
 
-var entryList = {
+var data = {
   currentView: '',
   monday: {
     entry: []
+  },
+  tuesday: {
+    entry: []
   }
+
+
 };
+
+
 
 var form = document.querySelector('form');
 
-var entryData = {};
-entryData.day = form.elements.day.value;
-entryData.hour = form.elements.hour.value;
-entryData.description = form.elements.description.value;
+form.addEventListener('submit', function () {
+  event.preventDefault();
+  var entryData = {};
+  var day = form.elements.day.value;
+  // data[day]
+  entryData.hour = form.elements.hour.value;
+  entryData.description = form.elements.description.value;
 
-// push object into array
+  // push object into array
+  data[day].entry.push(entryData);
+})
 
-console.log(entryList);
+
+
+console.log(data);
