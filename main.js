@@ -10,16 +10,27 @@ addEntry.addEventListener('click', function () {
 var data = {
   currentView: '',
   monday: {
-    entry: []
+    entries: []
   },
   tuesday: {
-    entry: []
+    entries: []
+  },
+  wednesday: {
+    entries: []
+  },
+  thursday: {
+    entries: []
+  },
+  friday: {
+    entries: []
+  },
+  saturday: {
+    entries: []
+  },
+  sunday: {
+    entries: []
   }
-
-
 };
-
-
 
 var form = document.querySelector('form');
 
@@ -32,7 +43,9 @@ form.addEventListener('submit', function () {
   entryData.description = form.elements.description.value;
 
   // push object into array
-  data[day].entry.push(entryData);
+  data[day].entries.push(entryData);
+  overElement.className = 'overlay invisible';
+  modalElement.className = 'modal invisible';
 })
 
 
